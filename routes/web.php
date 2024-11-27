@@ -11,3 +11,6 @@ Route::post('/products', [ProductController::class, 'store']);
 
 // Update an existing product
 Route::put('/products/{id}', [ProductController::class, 'update']);
+
+// Get product data
+Route::get('/products/{id}', [ProductController::class, 'show']); 
